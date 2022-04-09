@@ -52,7 +52,7 @@ def AC_infor(PORT):
 if __name__ == '__main__':
     while True:
         # read soil sensor data
-        AC_contain = AC_infor('/dev/ttyS4',1)
+        AC_contain = AC_infor('/dev/ttyS1')
         print (AC_contain)
         time.sleep(10)
 
