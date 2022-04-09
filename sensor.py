@@ -18,9 +18,9 @@ import time
 def on_AC_publish(AC_infor):
     try:
         client = mqtt.Client()
-        client.username_pw_set("U9UMevvuOaMmBDCDz3dM","xxxx")
+        client.username_pw_set("CaMBi9SXcyjgPFJ9N6GU","xxxx")
         client.connect('thingsboard.cloud', 1883, 60)
-        payload = {'Temperature' : 25 , 'humidity' : 80}
+        payload = {'soil_Temp' : AC_infor[0], 'soil_WC' : AC_infor[1], 'soil_EC' : AC_infor[2], 'Air_Temp' : AC_infor[3],'Air_Humi' : AC_infor[4]}
         #payload = {'Temperature' : AC_infor[0] , 'humidity' : AC_infor[1],'CO2':AC_infor[2], 'settemp':AC_infor[3], 'compressor':AC_infor[4]}
         client.publish("v1/devices/me/telemetry", json.dumps(payload))
         time.sleep(1)
