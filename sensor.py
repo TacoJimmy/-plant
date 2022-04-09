@@ -37,7 +37,7 @@ def AC_infor(PORT):
         
 
         
-        contain_infor = soil_read[0]/100,soil_read[1]/100,soil_read[0]
+        contain_infor = soil_read[0]/100,soil_read[1]/100,soil_read[2]
         return (contain_infor)
 
     except:
