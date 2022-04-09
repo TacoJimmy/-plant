@@ -37,7 +37,7 @@ def AC_infor(PORT):
         time.sleep(1)
         air_read = master.execute(2, cst.READ_HOLDING_REGISTERS, 1090, 4)
         time.sleep(1)
-        contain_infor = soil_read[0]/100,soil_read[1]/100,soil_read[2],air_read[0]/100,air_read[2]/100
+        contain_infor = soil_read[0]/100,soil_read[1]/100,soil_read[2],air_read[0]/100,air_read[3]/100
         return (contain_infor)
 
     except:
