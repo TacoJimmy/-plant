@@ -55,7 +55,7 @@ if __name__ == '__main__':
         AC_contain = AC_infor('/dev/ttyS1')
         if AC_contain != 0:
             on_AC_publish(AC_contain)
-        print (AC_contain)
-        time.sleep(10)
+        #print (AC_contain)
+        time.sleep(120)
 
 
